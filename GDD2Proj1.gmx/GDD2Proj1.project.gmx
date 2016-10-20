@@ -78,6 +78,7 @@
     <room>rooms\HallPrototype_01</room>
     <room>rooms\HallPrototype_02</room>
     <room>rooms\HallPrototype_03</room>
+    <room>rooms\HallPrototype_04</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
