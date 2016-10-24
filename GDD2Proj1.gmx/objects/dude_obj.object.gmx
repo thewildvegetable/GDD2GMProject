@@ -493,9 +493,6 @@ if(grenadesAvailable &gt; 0)
 {
     grenade = instance_create(x,y,obj_grenade);  
     grenade.direction = point_direction(x,y,mouse_x,mouse_y);
-    grenade.image_angle = point_direction(x,y,mouse_x,mouse_y);
-    grenade.speed = 10
-    grenadeCooldown = 0;
 }
 </string>
           </argument>
@@ -577,8 +574,12 @@ reloading = true;
             <kind>1</kind>
             <string>draw_self();
 var perc;//the percent health to display
-perc=(hitP/maxHP)*100;
+perc =(hitP/maxHP)*100;
 draw_healthbar(x-16,y-32,x+16,y-28,perc,c_black,c_red,c_green,0,true,false);
+
+var ammo;//the percent of ammo you have
+ammo =(batteryCharge/10)*100;
+draw_healthbar(x-16,y-42,x+16,y-38,ammo,c_black,c_blue,c_blue,0,true,false);
 </string>
           </argument>
         </arguments>
