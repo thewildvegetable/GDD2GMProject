@@ -60,16 +60,16 @@ maxHP = 3;//the max hp that the enemy can have
     case enemyState.idle:{
         horizontalSpeed = 0;
         verticalSpeed = (min(7, verticalSpeed + .07));      //apply gravity
-        if (distance_to_object(dude_obj) &lt; 128){
+        if (distance_to_object(dude_obj) &lt; 160){
             state = enemyState.chase;
         }
     }
     break;
     case enemyState.chase:{
         direct = sign(dude_obj.x - x);
-        horizontalSpeed = direct * 3;
+        horizontalSpeed = direct * 6;
         verticalSpeed = (min(7, verticalSpeed + .07));      //apply gravity
-        if (distance_to_object(dude_obj) &gt; 160){
+        if (distance_to_object(dude_obj) &gt; 192){
             state = enemyState.idle;
         }
     }

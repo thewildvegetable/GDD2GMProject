@@ -30,7 +30,7 @@ grav = 0.7;
 hsp = 0;
 vsp = 0;
 jumpspeed = 10;
-movespeed = 4;
+movespeed = 8;
 
 batteryCharge = 10;//Ammo and reloading values
 reloadSpeed = 0;
@@ -553,7 +553,7 @@ if(reloading == false &amp;&amp; batteryCharge &gt; 0)
     bullet = instance_create(x,y,obj_blasterShot);  
     bullet.direction = point_direction(x,y,mouse_x,mouse_y);
     bullet.image_angle = point_direction(x,y,mouse_x,mouse_y);
-    bullet.speed = 10;
+    bullet.speed = 15;
     batteryCharge -= 1;
 }
 </string>
