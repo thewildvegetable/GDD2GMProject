@@ -26,9 +26,9 @@
           <argument>
             <kind>1</kind>
             <string>///Variable Setup
-grav = 0.2;
-vsp = speed;
-hsp = speed;
+grav = 0.8;
+vsp = -7;
+hsp = 7;
 fuze = 100;
 </string>
           </argument>
@@ -64,7 +64,7 @@ if (place_meeting(x+hsp, y, obj_blackTerrain))
     }
     
     
-    hsp = 0;
+    hsp = -hsp;
     if(fuze &gt; 5)
     {
         fuze = 5;
@@ -80,7 +80,7 @@ if (place_meeting(x, y+vsp, obj_blackTerrain))
         y += sign(vsp);
     }
     
-    vsp = 0;
+    vsp = -vsp;
     if(fuze &gt; 5)
     {
         fuze = 5;
