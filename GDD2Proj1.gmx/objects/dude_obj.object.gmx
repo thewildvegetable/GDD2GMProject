@@ -127,6 +127,8 @@ if (place_meeting(x, y+vsp, obj_blackTerrain))
     vsp = 0;
 }
 y += vsp;
+
+//draw_text(16,16,"Lives: " + lives);
 </string>
           </argument>
         </arguments>
@@ -229,7 +231,8 @@ if(iFrames == false){
         iFrames = true;
     if(hitP&lt;=0)
         {
-        game_restart(); 
+        lives--;
+        room_restart(); 
         }
     }
 else{
@@ -239,6 +242,10 @@ else{
 
 
 //if get health is working, do restart room. when live reaches 0 game reset
+if(lives&lt;0)
+{
+game_restart(); 
+}
 </string>
           </argument>
         </arguments>
@@ -261,8 +268,7 @@ else{
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>
-//If the player is not invulnerable
+            <string>//If the player is not invulnerable
 if(iFrames == false){
 //Take damage
     hitP--;
@@ -272,7 +278,8 @@ if(iFrames == false){
         iFrames = true;
     if(hitP&lt;=0)
         {
-        game_restart(); 
+        lives--;
+        room_restart(); 
         }
     }
 else{
@@ -282,6 +289,10 @@ else{
 
 
 //if get health is working, do restart room. when live reaches 0 game reset
+if(lives&lt;0)
+{
+game_restart(); 
+}
 </string>
           </argument>
         </arguments>
@@ -314,7 +325,8 @@ if(iFrames == false){
         iFrames = true;
     if(hitP&lt;=0)
         {
-        game_restart(); 
+        lives--;
+        room_restart(); 
         }
     }
 else{
@@ -324,6 +336,10 @@ else{
 
 
 //if get health is working, do restart room. when live reaches 0 game reset
+if(lives&lt;0)
+{
+game_restart(); 
+}
 </string>
           </argument>
         </arguments>
@@ -356,7 +372,8 @@ if(iFrames == false){
         iFrames = true;
     if(hitP&lt;=0)
         {
-        game_restart(); 
+        lives--;
+        room_restart(); 
         }
     }
 else{
@@ -366,6 +383,10 @@ else{
 
 
 //if get health is working, do restart room. when live reaches 0 game reset
+if(lives&lt;0)
+{
+game_restart(); 
+}
 </string>
           </argument>
         </arguments>
@@ -398,7 +419,8 @@ if(iFrames == false){
         iFrames = true;
     if(hitP&lt;=0)
         {
-        game_restart(); 
+        lives--;
+        room_restart(); 
         }
     }
 else{
@@ -408,6 +430,10 @@ else{
 
 
 //if get health is working, do restart room. when live reaches 0 game reset
+if(lives&lt;0)
+{
+game_restart(); 
+}
 </string>
           </argument>
         </arguments>
@@ -440,7 +466,8 @@ if(iFrames == false){
         iFrames = true;
     if(hitP&lt;=0)
         {
-        game_restart(); 
+        lives--;
+        room_restart();
         }
     }
 else{
@@ -450,6 +477,10 @@ else{
 
 
 //if get health is working, do restart room. when live reaches 0 game reset
+if(lives&lt;0)
+{
+game_restart(); 
+}
 </string>
           </argument>
         </arguments>
