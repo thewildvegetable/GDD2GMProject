@@ -31,6 +31,7 @@
       <sprite>sprites\sp_grenade</sprite>
       <sprite>sprites\laser</sprite>
       <sprite>sprites\enemyBulletSprite</sprite>
+      <sprite>sprites\turretBullet_sprite</sprite>
       <sprite>sprites\sp_plasmaExplosion</sprite>
     </sprites>
   </sprites>
