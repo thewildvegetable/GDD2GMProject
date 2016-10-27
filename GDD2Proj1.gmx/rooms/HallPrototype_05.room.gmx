@@ -178,13 +178,8 @@
     <instance objName="obj_blackTerrain" x="288" y="0" name="inst_C942C337" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_blackTerrain" x="192" y="0" name="inst_905F0410" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_blackTerrain" x="1248" y="0" name="inst_AEA24299" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_blackTerrain" x="128" y="192" name="inst_05A93CFA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_blackTerrain" x="160" y="160" name="inst_2BD171B1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_blackTerrain" x="160" y="128" name="inst_C83CE461" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_blackTerrain" x="160" y="224" name="inst_9147D421" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_blackTerrain" x="160" y="192" name="inst_97ECC5BF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_blackTerrain" x="192" y="224" name="inst_07DC6307" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_exit_Door" x="192" y="160" name="inst_9FFBD3AE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_blackTerrain" x="192" y="128" name="inst_8625906D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_blackTerrain" x="224" y="128" name="inst_0F56B453" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_blackTerrain" x="64" y="320" name="inst_9855524F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -234,7 +229,6 @@
     <instance objName="obj_blackTerrain" x="32" y="256" name="inst_5D5EB9C6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_blackTerrain" x="32" y="288" name="inst_B89C8A72" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_blackTerrain" x="32" y="224" name="inst_5A9AA9B2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_blackTerrain" x="128" y="160" name="inst_55A7CAF5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_blackTerrain" x="128" y="320" name="inst_28C81037" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_blackTerrain" x="576" y="128" name="inst_CE06EC66" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_blackTerrain" x="576" y="224" name="inst_F1459C2D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -270,9 +264,6 @@
     <instance objName="obj_blackTerrain" x="1280" y="256" name="inst_09F99FA7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_blackTerrain" x="1152" y="160" name="inst_4C6530F7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_blackTerrain" x="1152" y="192" name="inst_CA25AF60" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_blackTerrain" x="1248" y="32" name="inst_C31B8476" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_blackTerrain" x="1248" y="64" name="inst_47ABCF79" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_blackTerrain" x="1248" y="96" name="inst_31C6FD2B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_blackTerrain" x="1504" y="320" name="inst_D6647E10" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_blackTerrain" x="1536" y="320" name="inst_9AA186C0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_blackTerrain" x="1568" y="288" name="inst_9C870DA8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -369,6 +360,9 @@
     <instance objName="obj_blackTerrain" x="1536" y="-64" name="inst_C85A805B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_blackTerrain" x="1568" y="-64" name="inst_7687E4ED" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_blackTerrain" x="1600" y="-64" name="inst_AA9E3BEC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_blackTerrain" x="128" y="160" name="inst_60ACF7B7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_blackTerrain" x="128" y="288" name="inst_AE2C0ACD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_blackTerrain" x="160" y="320" name="inst_D0EF11D8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

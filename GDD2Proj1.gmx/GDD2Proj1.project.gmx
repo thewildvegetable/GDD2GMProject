@@ -76,11 +76,12 @@
   </timelines>
   <rooms name="rooms">
     <room>rooms\HallPrototype_01</room>
-    <room>rooms\HallPrototype_02</room>
+    <room>rooms\HallPrototype_02_FORK</room>
     <room>rooms\HallPrototype_03</room>
     <room>rooms\HallPrototype_04</room>
     <room>rooms\HallPrototype_05</room>
     <room>rooms\HallPrototype_06</room>
+    <room>rooms\HallPrototype_07</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
