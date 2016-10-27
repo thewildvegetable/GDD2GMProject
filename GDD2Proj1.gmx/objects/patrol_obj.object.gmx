@@ -87,6 +87,7 @@ if (place_meeting(round(x + (direct * horizontalSpeed)), round(y), obj_blackTerr
         rightX = x + 100;         //how far right this moves
     }
     direct *= -1;
+    image_xscale *= -1;
 }
 
 //vertical collison with wall
@@ -94,7 +95,20 @@ if (place_meeting(round(x), round(y + verticalSpeed), obj_blackTerrain)){
     verticalSpeed = 0;
 }
 
-
+//avoid falling
+if (!place_meeting(round(x + (direct * horizontalSpeed)), round(y + 1), obj_blackTerrain)){
+    if (direct &gt; 0){
+        leftX = x - 100;     //how far left this moves
+        rightX = x;         //how far right this moves
+    }
+    //if the collision with wall is on the right edit leftX to be this and change rightX
+    else if (direct &lt; 0){
+        leftX = x;     //how far left this moves
+        rightX = x + 100;         //how far right this moves
+    }
+    direct *= -1;
+    image_xscale *= -1;
+}
 
 //move object
 x += direct * horizontalSpeed;
@@ -103,6 +117,7 @@ y += verticalSpeed;
 //check if need to turn around
 if (x &lt; leftX || x &gt; rightX){
     direct *= -1;
+    image_xscale *= -1;
 }
 
 //fire bullet at player
@@ -116,14 +131,6 @@ if (distance_to_object(dude_obj) &lt; 128 &amp;&amp; sign(dude_obj.x - x) == sig
         firing = true;
     }
 }
-
-/*
-implement next iteration. for now just fire beneath
-//if player is near then fire at them
-if (distance_to_object(player) &lt; 128){
-    dirX = sign(player.x - x);      //xdirection to fire in
-    dirY = sign(player.y - y);      //ydirection to fire in
-}*/
 </string>
           </argument>
         </arguments>
