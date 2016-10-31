@@ -30,9 +30,12 @@
       <sprite>sprites\sp_blasterShot</sprite>
       <sprite>sprites\sp_grenade</sprite>
       <sprite>sprites\laser</sprite>
+      <sprite>sprites\sp_mine</sprite>
       <sprite>sprites\enemyBulletSprite</sprite>
       <sprite>sprites\turretBullet_sprite</sprite>
       <sprite>sprites\sp_plasmaExplosion</sprite>
+      <sprite>sprites\sp_spike</sprite>
+      <sprite>sprites\explosion</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
@@ -67,6 +70,8 @@
       <object>objects\laser_beam_obj</object>
       <object>objects\obj_laser_off</object>
       <object>objects\laser_obj</object>
+      <object>objects\obj_mine</object>
+      <object>objects\obj_spike</object>
     </objects>
     <objects name="GUI">
       <object>objects\health_obj</object>
