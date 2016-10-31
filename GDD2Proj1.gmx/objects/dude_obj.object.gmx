@@ -221,7 +221,7 @@ else if(iFramesTimer == 0){
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>  lives--;
+            <string>hitP -= maxHP;
   room_restart();
 </string>
           </argument>
