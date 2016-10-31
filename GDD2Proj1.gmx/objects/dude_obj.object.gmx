@@ -33,7 +33,7 @@ jumpspeed = 10;
 movespeed = 4;
 
 batteryCharge = 10;//Ammo and reloading values
-reloadSpeed = 0;
+reloadSpeed = 10;
 reloading = false;
 
 grenadesAvailable = 3;//Number of grenades the player has
@@ -149,19 +149,25 @@ y += vsp;
             <kind>1</kind>
             <string>///Ammo and Reloading Code
 
-if(reloadSpeed &gt;= 45)
-{
-    reloading = false;
-    batteryCharge = 10;
-    reloadSpeed = 0;
-}
-if(reloading == true)
-{
-    reloadSpeed += 1;
-}
 if(batteryCharge &lt;= 0)
 {
     reloading = true;
+}
+
+if(reloadSpeed &lt;= 0 &amp;&amp; reloading == true)
+{
+    batteryCharge += 1;
+    reloadSpeed = 10;
+}
+
+if(reloading == true)
+{
+    reloadSpeed -= 1;
+}
+
+if(batteryCharge &gt;= 10)
+{
+    reloading = false;
 }
 
 
@@ -471,6 +477,31 @@ else{
         <isnot>0</isnot>
       </action>
     </event>
+    <event eventtype="5" enumb="82">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Early Reload Trigger
+
+reloading = true;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="6" enumb="54">
       <action>
         <libid>1</libid>
@@ -488,11 +519,14 @@ else{
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Throwing Grenade
-if(grenadesAvailable &gt; 0)
+            <string>///Firing  Bigblast
+if(reloading == false &amp;&amp; batteryCharge &gt; 4)
 {
-    grenade = instance_create(x,y,obj_grenade);  
-    grenade.direction = point_direction(x,y,mouse_x,mouse_y);
+    blast = instance_create(x,y,obj_bigblast);  
+    blast.direction = point_direction(x,y,mouse_x,mouse_y);
+    blast.image_angle = point_direction(x,y,mouse_x,mouse_y);
+    blast.speed = 4;
+    batteryCharge -= 5;
 }
 </string>
           </argument>
@@ -525,31 +559,6 @@ if(reloading == false &amp;&amp; batteryCharge &gt; 0)
     bullet.speed = 10;
     batteryCharge -= 1;
 }
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="6" enumb="52">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>///Early Reload Trigger
-
-reloading = true;
 </string>
           </argument>
         </arguments>

@@ -32,6 +32,7 @@
       <sprite>sprites\laser</sprite>
       <sprite>sprites\enemyBulletSprite</sprite>
       <sprite>sprites\sp_plasmaExplosion</sprite>
+      <sprite>sprites\sp_bigblast</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
@@ -58,6 +59,7 @@
       <object>objects\obj_grenade</object>
       <object>objects\obj_plasmaExplosion</object>
       <object>objects\turretBullet_obj</object>
+      <object>objects\obj_bigblast</object>
     </objects>
     <objects name="players">
       <object>objects\dude_obj</object>
