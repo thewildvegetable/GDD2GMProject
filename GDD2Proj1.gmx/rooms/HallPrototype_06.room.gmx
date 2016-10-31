@@ -319,16 +319,16 @@
     <instance objName="chargeEnemy_obj" x="416" y="64" name="inst_E6E40F02" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="chargeEnemy_obj" x="256" y="64" name="inst_C48A2A53" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="chargeEnemy_obj" x="64" y="64" name="inst_212E725F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="patrol_obj" x="928" y="192" name="inst_E27CF90E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="patrol_obj" x="1184" y="192" name="inst_97E1505C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="patrol_obj" x="960" y="128" name="inst_E27CF90E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="patrol_obj" x="1184" y="128" name="inst_97E1505C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="turret_obj" x="736" y="64" name="inst_8A95D0E2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="turret_obj" x="832" y="160" name="inst_694B1728" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="chaseEnemy_obj" x="1056" y="160" name="inst_3597780A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="chaseEnemy_obj" x="1280" y="128" name="inst_74578317" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="laserDrone" x="960" y="64" name="inst_58049ACA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="laserDrone" x="1184" y="64" name="inst_BA2430AC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="patrol_obj" x="1536" y="160" name="inst_8ADF157A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="patrol_obj" x="1792" y="128" name="inst_D996547B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="patrol_obj" x="1568" y="96" name="inst_8ADF157A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="patrol_obj" x="1792" y="96" name="inst_D996547B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="laser_obj" x="1664" y="0" name="inst_28B7B08A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="laser_obj" x="1696" y="0" name="inst_217185C5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="chaseEnemy_obj" x="1664" y="320" name="inst_A4CBED4B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -350,9 +350,7 @@
     <instance objName="obj_blackTerrain" x="480" y="288" name="inst_C51ADEB0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_blackTerrain" x="352" y="288" name="inst_747A9E8A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_blackTerrain" x="352" y="320" name="inst_4443EC59" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_blackTerrain" x="320" y="288" name="inst_2579E2F0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_blackTerrain" x="320" y="320" name="inst_1BC65173" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_blackTerrain" x="288" y="288" name="inst_22C17BFB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_blackTerrain" x="288" y="320" name="inst_499BAA81" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_blackTerrain" x="224" y="320" name="inst_E66F39A9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_blackTerrain" x="256" y="320" name="inst_D4574711" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -373,8 +371,23 @@
     <instance objName="chaseEnemy_obj" x="1216" y="320" name="inst_A3D48A0D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="chaseEnemy_obj" x="832" y="288" name="inst_D3792E46" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="chargeEnemy_obj" x="1504" y="320" name="inst_CF3AA378" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="patrol_obj" x="160" y="288" name="inst_770E36CD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="patrol_obj" x="288" y="288" name="inst_770E36CD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="laserDrone" x="608" y="256" name="inst_C5A6AB02" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_blackTerrain" x="1536" y="160" name="inst_C601A88C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_blackTerrain" x="1568" y="160" name="inst_85930547" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_blackTerrain" x="1152" y="192" name="inst_45C290BC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_blackTerrain" x="1184" y="192" name="inst_A3B13183" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_blackTerrain" x="1152" y="160" name="inst_F195D93B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_blackTerrain" x="1184" y="160" name="inst_C8FEEE79" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_blackTerrain" x="928" y="160" name="inst_1F236756" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_blackTerrain" x="960" y="160" name="inst_89A63CC6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_blackTerrain" x="960" y="192" name="inst_36E5658A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_blackTerrain" x="928" y="192" name="inst_1E6AFB5E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_blackTerrain" x="1536" y="128" name="inst_CA320083" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_blackTerrain" x="1568" y="128" name="inst_5A3252AC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_blackTerrain" x="1760" y="128" name="inst_465E3DF3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_blackTerrain" x="1792" y="128" name="inst_BD96D3A9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_blackTerrain" x="1216" y="160" name="inst_BC7424D0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

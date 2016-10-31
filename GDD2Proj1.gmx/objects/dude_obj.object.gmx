@@ -228,6 +228,53 @@ else if(iFramesTimer == 0){
         </arguments>
       </action>
     </event>
+    <event eventtype="4" ename="obj_mine">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>//If the player is not invulnerable
+if(iFrames == false){
+//Take damage
+    hitP--;
+//Set the iframes timer to max
+    iFramesTimer = iFramesTimerMax;
+//You are now invulnerable
+        iFrames = true;
+    if(hitP&lt;=0)
+        {
+        lives--;
+        room_restart(); 
+        }
+    }
+else{
+        //You're invulnerable currently.
+    }
+
+
+
+//if get health is working, do restart room. when live reaches 0 game reset
+if(lives&lt;0)
+{
+game_restart(); 
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="4" ename="laser_beam_obj">
       <action>
         <libid>1</libid>
