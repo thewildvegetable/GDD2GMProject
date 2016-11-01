@@ -624,19 +624,19 @@ reloading = true;
             <string>///Firing  Bigblast
 if(reloading == false &amp;&amp; batteryCharge &gt; 4)
 {
-<<<<<<< HEAD
+
     bullet = instance_create(x,y,obj_blasterShot);  
     bullet.direction = point_direction(x,y,mouse_x,mouse_y);
     bullet.image_angle = point_direction(x,y,mouse_x,mouse_y);
     bullet.speed = 15;
     batteryCharge -= 1;
-=======
+
     blast = instance_create(x,y,obj_bigblast);  
     blast.direction = point_direction(x,y,mouse_x,mouse_y);
     blast.image_angle = point_direction(x,y,mouse_x,mouse_y);
     blast.speed = 4;
     batteryCharge -= 5;
->>>>>>> origin/FinalPlaytestVersion
+
 }
 </string>
           </argument>
