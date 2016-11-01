@@ -59,7 +59,7 @@ maxHP= 3;//the max hp that the enemy can have
         direct = 0;
         horizontalSpeed = 0;
         verticalSpeed = (min(7, verticalSpeed + .07));      //apply gravity
-        if (distance_to_object(dude_obj) &lt; 128){
+        if (distance_to_object(dude_obj) &lt; 160){
             state = enemyState.chase;
         }
     }
@@ -68,7 +68,7 @@ maxHP= 3;//the max hp that the enemy can have
         if (direct == 0){
             direct = sign(dude_obj.x - x);
         }
-        horizontalSpeed = direct * 5;
+        horizontalSpeed = direct * 7;
         verticalSpeed = (min(7, verticalSpeed + .07));      //apply gravity
         //horizontal collison with wall
         if (place_meeting(round(x + horizontalSpeed), round(y), obj_blackTerrain)){

@@ -27,7 +27,7 @@
             <kind>1</kind>
             <string>//initialize movement position
 direct = -1;
-movespeed = 1.5;
+movespeed = 3;
 leftX = x - 100;     //how far left this moves
 rightX = x;         //how far right this moves
 timer = 0;

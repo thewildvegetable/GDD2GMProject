@@ -30,8 +30,12 @@
       <sprite>sprites\sp_blasterShot</sprite>
       <sprite>sprites\sp_grenade</sprite>
       <sprite>sprites\laser</sprite>
+      <sprite>sprites\sp_mine</sprite>
       <sprite>sprites\enemyBulletSprite</sprite>
+      <sprite>sprites\turretBullet_sprite</sprite>
       <sprite>sprites\sp_plasmaExplosion</sprite>
+      <sprite>sprites\sp_spike</sprite>
+      <sprite>sprites\explosion</sprite>
       <sprite>sprites\sp_bigblast</sprite>
     </sprites>
   </sprites>
@@ -68,6 +72,8 @@
       <object>objects\laser_beam_obj</object>
       <object>objects\obj_laser_off</object>
       <object>objects\laser_obj</object>
+      <object>objects\obj_mine</object>
+      <object>objects\obj_spike</object>
     </objects>
     <objects name="GUI">
       <object>objects\health_obj</object>
@@ -78,8 +84,12 @@
   </timelines>
   <rooms name="rooms">
     <room>rooms\HallPrototype_01</room>
-    <room>rooms\HallPrototype_02</room>
+    <room>rooms\HallPrototype_02_FORK</room>
     <room>rooms\HallPrototype_03</room>
+    <room>rooms\HallPrototype_04</room>
+    <room>rooms\HallPrototype_05</room>
+    <room>rooms\HallPrototype_06</room>
+    <room>rooms\HallPrototype_07</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

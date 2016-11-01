@@ -30,10 +30,10 @@ grav = 0.7;
 hsp = 0;
 vsp = 0;
 jumpspeed = 10;
-movespeed = 4;
+movespeed = 8;
 
 batteryCharge = 10;//Ammo and reloading values
-reloadSpeed = 10;
+reloadSpeed = 0;
 reloading = false;
 
 grenadesAvailable = 3;//Number of grenades the player has
@@ -127,6 +127,8 @@ if (place_meeting(x, y+vsp, obj_blackTerrain))
     vsp = 0;
 }
 y += vsp;
+
+//draw_text(16,16,"Lives: " + lives);
 </string>
           </argument>
         </arguments>
@@ -208,6 +210,77 @@ else if(iFramesTimer == 0){
         </arguments>
       </action>
     </event>
+    <event eventtype="4" ename="obj_spike">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>hitP -= maxHP;
+  room_restart();
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="obj_mine">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>//If the player is not invulnerable
+if(iFrames == false){
+//Take damage
+    hitP--;
+//Set the iframes timer to max
+    iFramesTimer = iFramesTimerMax;
+//You are now invulnerable
+        iFrames = true;
+    if(hitP&lt;=0)
+        {
+        lives--;
+        room_restart(); 
+        }
+    }
+else{
+        //You're invulnerable currently.
+    }
+
+
+
+//if get health is working, do restart room. when live reaches 0 game reset
+if(lives&lt;0)
+{
+game_restart(); 
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="4" ename="laser_beam_obj">
       <action>
         <libid>1</libid>
@@ -235,7 +308,8 @@ if(iFrames == false){
         iFrames = true;
     if(hitP&lt;=0)
         {
-        game_restart(); 
+        lives--;
+        room_restart(); 
         }
     }
 else{
@@ -245,6 +319,10 @@ else{
 
 
 //if get health is working, do restart room. when live reaches 0 game reset
+if(lives&lt;0)
+{
+game_restart(); 
+}
 </string>
           </argument>
         </arguments>
@@ -267,8 +345,7 @@ else{
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>
-//If the player is not invulnerable
+            <string>//If the player is not invulnerable
 if(iFrames == false){
 //Take damage
     hitP--;
@@ -278,7 +355,8 @@ if(iFrames == false){
         iFrames = true;
     if(hitP&lt;=0)
         {
-        game_restart(); 
+        lives--;
+        room_restart(); 
         }
     }
 else{
@@ -288,6 +366,10 @@ else{
 
 
 //if get health is working, do restart room. when live reaches 0 game reset
+if(lives&lt;0)
+{
+game_restart(); 
+}
 </string>
           </argument>
         </arguments>
@@ -320,7 +402,8 @@ if(iFrames == false){
         iFrames = true;
     if(hitP&lt;=0)
         {
-        game_restart(); 
+        lives--;
+        room_restart(); 
         }
     }
 else{
@@ -330,6 +413,10 @@ else{
 
 
 //if get health is working, do restart room. when live reaches 0 game reset
+if(lives&lt;0)
+{
+game_restart(); 
+}
 </string>
           </argument>
         </arguments>
@@ -362,7 +449,8 @@ if(iFrames == false){
         iFrames = true;
     if(hitP&lt;=0)
         {
-        game_restart(); 
+        lives--;
+        room_restart(); 
         }
     }
 else{
@@ -372,6 +460,10 @@ else{
 
 
 //if get health is working, do restart room. when live reaches 0 game reset
+if(lives&lt;0)
+{
+game_restart(); 
+}
 </string>
           </argument>
         </arguments>
@@ -404,7 +496,8 @@ if(iFrames == false){
         iFrames = true;
     if(hitP&lt;=0)
         {
-        game_restart(); 
+        lives--;
+        room_restart(); 
         }
     }
 else{
@@ -414,6 +507,10 @@ else{
 
 
 //if get health is working, do restart room. when live reaches 0 game reset
+if(lives&lt;0)
+{
+game_restart(); 
+}
 </string>
           </argument>
         </arguments>
@@ -446,7 +543,8 @@ if(iFrames == false){
         iFrames = true;
     if(hitP&lt;=0)
         {
-        game_restart(); 
+        lives--;
+        room_restart();
         }
     }
 else{
@@ -456,6 +554,10 @@ else{
 
 
 //if get health is working, do restart room. when live reaches 0 game reset
+if(lives&lt;0)
+{
+game_restart(); 
+}
 </string>
           </argument>
         </arguments>
@@ -556,7 +658,7 @@ if(reloading == false &amp;&amp; batteryCharge &gt; 0)
     bullet = instance_create(x,y,obj_blasterShot);  
     bullet.direction = point_direction(x,y,mouse_x,mouse_y);
     bullet.image_angle = point_direction(x,y,mouse_x,mouse_y);
-    bullet.speed = 10;
+    bullet.speed = 15;
     batteryCharge -= 1;
 }
 </string>
