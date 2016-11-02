@@ -36,7 +36,10 @@
       <sprite>sprites\sp_plasmaExplosion</sprite>
       <sprite>sprites\sp_spike</sprite>
       <sprite>sprites\explosion</sprite>
+<<<<<<< HEAD
+=======
       <sprite>sprites\sp_bigblast</sprite>
+>>>>>>> origin/FinalPlaytestVersion
     </sprites>
   </sprites>
   <backgrounds name="background">
