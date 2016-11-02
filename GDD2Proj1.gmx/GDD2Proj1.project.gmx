@@ -90,6 +90,7 @@
     <room>rooms\HallPrototype_05</room>
     <room>rooms\HallPrototype_06</room>
     <room>rooms\HallPrototype_07</room>
+    <room>rooms\HallPrototype_END</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
